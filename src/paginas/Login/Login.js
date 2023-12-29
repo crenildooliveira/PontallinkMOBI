@@ -20,14 +20,15 @@ export default function Login() {
 
             <animatable.View animation="fadeIn" delay={600} style={styles.containerForm}>
 
-                {/*Email*/}
+                
+                {/*Email
                 <Text style={styles.title}>Email</Text>
                 <TextInput
                     placeholder="Digite seu email..."
                     style={styles.input}
                 />
 
-                {/*Senha*/}
+                {/*Senha
                 <Text style={styles.title}>Senha</Text>
                 <TextInput
                     placeholder="Digite sua senha..."
@@ -41,11 +42,11 @@ export default function Login() {
                 <TouchableOpacity style={styles.buttonLogin} onPress={ () => navigation.navigate("Feed")}>
                     <Text style={styles.LoginText}>Login</Text>
                 </TouchableOpacity>
-
-                {/* Linhas de separação visual */}
+                */}
+                {/* Linhas de separação visual*/} 
                 <View style={styles.lineContainer}>
                     <View style={styles.line} />
-                    <Text style={styles.orText}>OU</Text>
+                    <Text style={styles.orText}></Text>
                     <View style={styles.line} />
                 </View>
                 {/* Linhas de separação visual */}
@@ -54,6 +55,15 @@ export default function Login() {
                     <Text style={styles.LoginText}>Logar com Google</Text>
                 </TouchableOpacity>
 
+                {/* Linhas de separação visual*/} 
+                <View style={styles.lineContainer}>
+                    <View style={styles.line} />
+                    <Text style={styles.orText}></Text>
+                    <View style={styles.line} />
+                </View>
+                {/* Linhas de separação visual */}
+
+                {/*
                 <TouchableOpacity style={styles.buttonLogin}>
                     <Text style={styles.LoginText}>Logar com Microsoft</Text>
                 </TouchableOpacity>
@@ -61,6 +71,7 @@ export default function Login() {
                 <TouchableOpacity style={styles.buttonRegister} onPress={ () => navigation.navigate("Cadastro")}>
                     <Text style={styles.registerText}>Não possui conta ? Cadastre-se</Text>
                 </TouchableOpacity>
+                */}
 
             </animatable.View>
             
