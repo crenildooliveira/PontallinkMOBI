@@ -1,0 +1,29 @@
+Usando TOKENS:
+JWT (JSON Web Tokens)
+
+Sim, você está correto. Um token JWT, por padrão, é codificado em Base64 e, portanto, pode ser decodificado para revelar seu conteúdo. Portanto, se um invasor tiver acesso ao token, ele pode decodificar a parte do payload e ver as informações contidas nele.
+
+Isso destaca a importância de armazenar e transmitir tokens de maneira segura. Aqui estão algumas práticas recomendadas para mitigar esse risco:
+
+HTTPS:
+
+Sempre use HTTPS para garantir a criptografia durante a transmissão de dados entre o cliente e o servidor. Isso evita que terceiros capturem informações durante a comunicação.
+Armazenamento Seguro:
+
+Armazene tokens de maneira segura no lado do cliente. Se estiver usando cookies, marque-os como seguros e restritos para HTTP apenas, para evitar acessos não autorizados.
+Minimização de Informações Sensíveis:
+
+Evite armazenar informações altamente sensíveis no payload do token. Informações críticas devem ser mantidas no lado do servidor.
+Expiração Rápida:
+
+Defina períodos curtos de expiração para os tokens. Isso limita o tempo de exposição, mesmo se um token for comprometido.
+Renovação de Token:
+
+Use tokens de atualização ou implemente um processo seguro de renovação de tokens para evitar a necessidade de armazenar credenciais por longos períodos no cliente.
+Revogação de Token:
+
+Se possível, implemente um sistema de revogação de tokens para invalidar tokens antes do tempo de expiração, se necessário.
+Monitoramento e Auditoria:
+
+Monitore ativamente os acessos e, em caso de violação de segurança, reavalie a segurança do sistema e tome medidas corretivas.
+Lembre-se de que, embora a segurança seja uma prioridade, não há soluções totalmente à prova de invasões. O objetivo é implementar camadas de segurança que tornem mais difícil para os invasores acessar informações confidenciais.

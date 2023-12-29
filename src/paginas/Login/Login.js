@@ -58,7 +58,7 @@ export default function Login() {
                     <Text style={styles.LoginText}>Logar com Microsoft</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.buttonRegister}>
+                <TouchableOpacity style={styles.buttonRegister} onPress={ () => navigation.navigate("Cadastro")}>
                     <Text style={styles.registerText}>Não possui conta ? Cadastre-se</Text>
                 </TouchableOpacity>
 
